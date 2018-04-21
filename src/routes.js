@@ -4,7 +4,8 @@ import Container from './container';
 import CounterPage from './pages/counterPage';
 
 export default (
-    <Route path='/' component={Container}>
+    <Route path='/' component={null}>
+        <IndexRoute component={Container} />
         <Route path='counter' component={CounterPage} />
     </Route>
 );

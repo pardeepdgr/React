@@ -1,6 +1,7 @@
 import React from 'react';
 import Display from '../components/counter/display';
 import Button from '../components/counter/button';
+import Header from '../common/header';
 
 class CounterPage extends React.Component {
     state = { counter: 0 };
@@ -14,9 +15,10 @@ class CounterPage extends React.Component {
     render() {
         return(
             <div>
+                <Header/>
                 <Display count = {this.state.counter} />
     		    <Button incCount = {this.inc} />
-          </div>
+            </div>
         );
     }
 }
